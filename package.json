@@ -1,0 +1,58 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.19.3"
+  },
+  "name": "flamejs",
+  "description": "npm install --save-dev @babel/core;",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "ansi-styles": "^3.2.1",
+    "browserslist": "^4.21.4",
+    "caniuse-lite": "^1.0.30001414",
+    "chalk": "^2.4.2",
+    "color-convert": "^1.9.3",
+    "color-name": "^1.1.3",
+    "convert-source-map": "^1.8.0",
+    "electron-to-chromium": "^1.4.269",
+    "debug": "^4.3.4",
+    "escalade": "^3.1.1",
+    "escape-string-regexp": "^1.0.5",
+    "gensync": "^1.0.0-beta.2",
+    "globals": "^11.12.0",
+    "has-flag": "^3.0.0",
+    "js-tokens": "^4.0.0",
+    "jsesc": "^2.5.2",
+    "json5": "^2.2.1",
+    "ms": "^2.1.2",
+    "picocolors": "^1.0.0",
+    "node-releases": "^2.0.6",
+    "safe-buffer": "^5.1.2",
+    "supports-color": "^5.5.0",
+    "semver": "^6.3.0",
+    "to-fast-properties": "^2.0.0",
+    "update-browserslist-db": "^1.0.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otioh/flamejs.git"
+  },
+  "keywords": [
+    "Flame",
+    "Flamejs",
+    "Flame",
+    "JS",
+    "Flame",
+    "Javascript"
+  ],
+  "author": "Erim Emmanuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Otioh/flamejs/issues"
+  },
+  "homepage": "https://github.com/Otioh/flamejs#readme"
+}

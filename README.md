@@ -1,1 +1,15 @@
 # flamejs
+Read Me:
+
+FLAME LIBRARY DOCUMENTATION
+
+*Sum:
+The sum function returns the sum of all the parameters passed into it, including items inside array
+of numbers and array of objects, errors status in boolean type, count of all items added successfully
+ and an array of badParameters that could not be processed.
+
+To work with array of objects, the passed in array must have the last item as a function that takes in
+index of a given item of the array and returns the column to be calculated.
+(e.g. [...testArr, (i)=>testArr[i].amount]).
+
+
