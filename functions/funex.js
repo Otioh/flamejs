@@ -1,4 +1,4 @@
-function funex(delaySeconds, ...functions){
+export default function funex(delaySeconds, ...functions){
     let i=0;
  function execute(){
 let fn=functions[i];
@@ -16,6 +16,3 @@ setTimeout(() => {
 execute()
 }  
   
-
-
-funex(2, ()=>console.log("yeye"), ()=>console.log("yeye"))

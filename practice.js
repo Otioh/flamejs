@@ -1,3 +1,3 @@
-import  cl  from './functions/cl.js';
 
-cl(len("yeye"))
+
+funex(2, cl(len("yeye")), cl("yeye"))
