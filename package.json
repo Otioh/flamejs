@@ -2,10 +2,10 @@
   "devDependencies": {
     "@babel/core": "^7.19.3"
   },
-  "name": "flamejs",
+  "name": "flame-tools",
   "description": "npm install --save-dev @babel/core;",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
     "ansi-styles": "^3.2.1",
@@ -42,12 +42,14 @@
     "url": "git+https://github.com/Otioh/flamejs.git"
   },
   "keywords": [
+    "Flame-tools",
     "Flame",
     "Flamejs",
     "Flame",
     "JS",
     "Flame",
-    "Javascript"
+    "Javascript",
+    "Javascript Sum"
   ],
   "author": "Erim Emmanuel",
   "license": "ISC",
