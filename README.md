@@ -1,6 +1,8 @@
 # flamejs
 Read Me:
 
+# npm i flame-tools
+
 FLAME LIBRARY DOCUMENTATION
 Flame JS comes with some handy tools for some frequent task that could be time consuming. Some of the tools include:
 
