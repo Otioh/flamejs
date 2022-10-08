@@ -54,7 +54,7 @@ The sum tool returns an object with the sum of all parameters passed into it inc
 
 // funSeque Function
 
-funSeque(
+`funSeque(
     {delaySeconds:5, isAsync:true},
     ()=>{
 cl('Book is a writing material')
@@ -66,6 +66,6 @@ cl('Book is a writing material')
         cl('Helping is a great investment')
     }
 
-    )
+    )`
     
 *etc.
