@@ -1,5 +1,0 @@
-function promise(){
-
-    return true;
-
-}

@@ -1,9 +1,9 @@
-export default function abr(string,  mutipleWords, lengthOfResult){
+export default function abr(string ="",  config={mutipleWords:false, lengthOfResult:2}){
+   
+    let {mutipleWords, lengthOfResult}=config;
     if(typeof string!=="string"){
     return "First Parameter is not a valid String";
     }    
-    lengthOfResult===undefined?lengthOfResult=2:lengthOfResult;
-    mutipleWords===undefined?mutipleWords=false:mutipleWords;
     if(lengthOfResult===2 && mutipleWords){
         let strArr=string.split(" "),
          newStr="";

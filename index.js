@@ -1,15 +1,7 @@
-import funex  from "./functions/funex";
-import cl from "./functions/cl";
-import sum from "./functions/sum";
-import len from "./functions/len";
-import abr from "./functions/abr";
+import funSeque  from "./functions/funseque.js";
+import cl from "./functions/cl.js";
+import sum from "./functions/sum.js";
+import len from "./functions/len.js";
+import abr from "./functions/abr.js";
 
-export {funex, cl, sum, len, abr}
-
-export default function flame(){
-    return {
-        funex, cl, sum, len, abr
-    }
-}
-
-
+export {funSeque, cl, sum, len, abr};

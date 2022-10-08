@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 
-export const useTimer = (hours, minutes, seconds) => {
+export const useTimer = (hours=0, minutes=0, seconds=0) => {
     const [Seconds, setSeconds] = useState(seconds);
     const [Minutes, setMinutes] = useState(minutes);
     const [Hours, setHours] = useState(hours);
@@ -12,7 +12,7 @@ export const useTimer = (hours, minutes, seconds) => {
             if (Seconds < 1 && Minutes < 1 && Hours < 1) {
 
 
-                return
+                return <></>
 
             }
 
