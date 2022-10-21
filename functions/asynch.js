@@ -1,15 +1,24 @@
-export default async function asynch(config={delaySeconds:0, isAsync:false}, functions=[]){
-    let counter=0;
-    let currentFunction=functions[counter];
-    
-    async function execute(){
-    if(await currentFunction()){
-        counter++;
-        currentFunction=functions[counter];
-        return execute();
-    }else{
-        return false;
+function promise(){
+    return new Promise((resolve)=>{
+        resolve()
+    })
+}
+
+export default function asynch(delaySeconds, functions){
+let i=-1;
+   function loop(){
+    if(i<functions.length-1){
+        i++;
+    promise().then(()=>{
+        functions[i]();
+        setTimeout(() => {
+          
+            return loop();   
+        }, delaySeconds*1000);
+        
+    }); 
     }
-}
-execute()
-}
+   }   
+   loop()
+    }
+
