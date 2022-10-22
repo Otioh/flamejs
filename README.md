@@ -49,7 +49,7 @@ The sum tool returns an object with the sum of all parameters passed into it inc
 
 *cl: Logs messages to the console with a matching title.
 
-*funSeque: Executes functions sequentially at an interval you provide in seconds.
+*funSeque: Executes functions sequentially at an interval you provide in seconds. This tool also handles promises with some controls of delay intervals
 
 
 
