@@ -9,17 +9,20 @@ FLAME TOOLS DOCUMENTATION
 
 `import {sum, funSeque, abr, len, cl} from 'flame-tools';`
 
-Flame JS comes with some handy tools for some frequent task that could be time consuming. Some of the tools include:
+Flame JS comes with some handy tools for some frequent task that could be algorithm intensive and time consuming. Some of the tools include:
 
-* sum: returns
-{
+* SUM: The sum tool is very useful for summing up numbers which are supplied as individual parameters, array of numbers or array of objects to sum a particular column.
+
+The Tool does not break any process even when it encounters a non-number item as it rather returns an object of the sum, bad parameters, errors and count as described below:
+ returns
+`{
     sum,
     badParameters, 
     errors, 
     count
     
     }
-
+`
 // Sum function
 
 (function(){
@@ -49,12 +52,10 @@ The sum tool returns an object with the sum of all parameters passed into it inc
 
 *cl: Logs messages to the console with a matching title.
 
-*funSeque: Executes functions sequentially at an interval you provide in seconds. This tool also handles promises with some controls of delay intervals
+*funSeque: Executes functions sequentially at an interval you provide in seconds. This tool also handles promises with some extra controls of delay intervals. I describe it as the cleanest and best way to implement asynchronous operations or handle promises.
 
 
-
-
-`funSeque( {delaySeconds:5, isAsync:true},
+`funSeque( {delaySeconds:5, isPromise:true},
     ()=>{
 cl('Book is a writing material')
     },
