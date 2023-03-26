@@ -1,4 +1,4 @@
-export default function abr(string ="",  config={mutipleWords:false, lengthOfResult:2}){
+export default function acronym(string ="",  config={mutipleWords:false, lengthOfResult:2}){
    
     let {mutipleWords, lengthOfResult}=config;
     if(typeof string!=="string"){
