@@ -1,11 +1,12 @@
 {
   "devDependencies": {
-    "@babel/core": "^7.19.3"
+    "@babel/core": "^7.19.3",
+    "@types/node": "^18.15.10"
   },
   "name": "flame-tools",
   "description": "Frequently used Javascript Tools",
   "type": "module",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "main": "index.js",
   "dependencies": {
     "ansi-styles": "^3.2.1",
@@ -45,9 +46,7 @@
     "Flame-tools",
     "Flame",
     "Flamejs",
-
     "JS tools",
-
     "Javascript tools",
     "Javascript Sum",
     "Sum of Array of Numbers",
@@ -55,7 +54,6 @@
     "Execute Functions in sequence",
     "funSeque",
     "sum",
-  
     "abbreviation of strings",
     "handy Javascript Tools",
     "Percentage"

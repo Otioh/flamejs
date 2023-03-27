@@ -1,3 +1,12 @@
+
+interface sum {
+    sum:number,
+    badParameters:string,
+
+}
+
+
+
 function sum(a:number, b:number | string):number{
 
     
@@ -6,3 +15,6 @@ function sum(a:number, b:number | string):number{
 
 
 console.log(sum(7,4))
+
+
+

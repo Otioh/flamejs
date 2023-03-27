@@ -1,3 +1,5 @@
-import percentage from './percent.js';
+import sum from "./sum.js";
 
-console.log(percentage({value:5, totalValue:25}).percent)
+
+
+console.log(sum([3,4]).sum)

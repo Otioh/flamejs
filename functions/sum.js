@@ -8,12 +8,12 @@
 // (e.g. [...testArr, (i)=>testArr[i].amount]).
 
 
-export default function sum(...numbersOrArrayOfNumbersOrArrayOfObjectsWithAColumnSpecifierFunction /* can */){
+export default function sum(...numbers_Or_Arrays /* can */){
     let sumAll=0,
      errors=false,
      badParameters=[],
      count=0;
-     numbersOrArrayOfNumbersOrArrayOfObjectsWithAColumnSpecifierFunction.forEach((parameter)=>{
+    numbers_Or_Arrays.forEach((parameter)=>{
         if(typeof parameter==="object" && parameter.length!==undefined){
            let innerSum=0;
            parameter.forEach((param, index)=>{

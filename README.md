@@ -10,18 +10,21 @@ It is a collection of solutions to some algorithm intensive and time consuming r
 
 To calculate sum of a given column in an array of objects, make sure the last item in the array is a function that takes in an iterator and returns the column to be calculated (e.g [...testArr, (i)=>testArr[i].amount]) and then feed the sum function with the array.
 
-
 The Tool does not break any process even when it encounters a non-number item as it rather returns an object of the sum, bad parameters, errors and count of successful additions. Check the code example below for usage.
 
-
 * funSeque -> This tool executes  functions sequentially in an interval you provide, we can describe it as Promises with more control. Check the code example below for usage.
+
+* acronym -> This tool abbreviates strings according to configurations you provide, it can be useful when you want to get the first Letter(s) of a word or first Letter(s) of range of words. Check the code example below for usage.
+
+
+* percentage -> This tool takes values and returns an object of the total value, actual value and percentage of the actual value. You can supply the percentage and total value and obtain the actual value. It is applicable to all use cases of percentage. Check the code example below for usage.
 
 
 ## Installation
 `npm i flame-tools`
 
 ## Import
-`import {sum, funSeque} from 'flame-tools'`
+`import {sum, funSeque, acronym, percentage} from 'flame-tools'`
 
 #  USAGE
 
@@ -69,5 +72,19 @@ funSeque(
     
     )
 
+
+
+
+// acronym
+console.log(acronym('Erim Emmanuel', {
+    mutipleWords: true;
+    lengthOfResult: 2;
+}))
+
+
+
+
+//percentage
+console.log(percentage({value:5, totalValue:25}).percent)
 
 ```
