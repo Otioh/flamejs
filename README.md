@@ -25,7 +25,7 @@ The Tool does not break any process even when it encounters a non-number item as
 
 #  USAGE
 
-`
+```
 
     let items=[
         {item:'Book', amount:400}, 
@@ -48,10 +48,12 @@ The Tool does not break any process even when it encounters a non-number item as
 
 
 
-
 // funSeque
 
-funSeque( {delaySeconds:5, isPromise:true},
+funSeque(
+
+    {delaySeconds:5, isPromise:true},
+
     ()=>{
         console.log('Book is a writing material')
     },
@@ -62,7 +64,10 @@ funSeque( {delaySeconds:5, isPromise:true},
 
     ()=>{
         console.log('Helping is a great investment')
-    }    )
+    }     
     
+    
+    )
 
-`
+
+    ```
