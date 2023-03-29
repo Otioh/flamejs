@@ -1,6 +1,14 @@
 # Flame-Tools JS Documentation
 
+
 [![](https://img.shields.io/npm/v/flame-tools.svg)](https://npmjs.org/package/flame-tools)  [![](https://img.shields.io/npm/dt/flame-tools.svg?maxAge=3600)](https://www.npmjs.com/package/flame-tools) [![](https://data.jsdelivr.com/v1/package/npm/flame-tools/badge)](https://www.jsdelivr.com/package/npm/flame-tools)
+[![install size](https://img.shields.io/badge/dynamic/json?url=https://packagephobia.com/v2/api.json?p=flame-tools&query=$.install.pretty&label=install%20size&style=flat-square)](https://packagephobia.now.sh/result?p=flame-tools)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/flame-tools?style=flat-square)](https://bundlephobia.com/package/flame-tools@latest)
+[![npm downloads](https://img.shields.io/npm/dm/flame-tools.svg?style=flat-square)](https://npm-stat.com/charts.html?package=flame-tools)
+[![gitter chat](https://img.shields.io/gitter/room/mzabriskie/flame-tools.svg?style=flat-square)](https://gitter.im/mzabriskie/flame-tools)
+[![Known Vulnerabilities](https://snyk.io/test/npm/flame-tools/badge.svg)](https://snyk.io/test/npm/flame-tools)
+
+
 
 
 Flame-Tools is a JavaScript Libray of frequently used tools for JavaScript Developers.
