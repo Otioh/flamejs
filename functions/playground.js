@@ -1,4 +1,4 @@
-import sum from "./sum.js";
+import sum from "./TS_Version/sum.ts";
 
 
 

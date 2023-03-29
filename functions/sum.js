@@ -13,40 +13,47 @@ export default function sum(...numbers_Or_Arrays /* can */){
      errors=false,
      badParameters=[],
      count=0;
-    numbers_Or_Arrays.forEach((parameter)=>{
-        if(typeof parameter==="object" && parameter.length!==undefined){
-           let innerSum=0;
-           parameter.forEach((param, index)=>{
-        if (isNaN(param)){
-            if(typeof param==="object" && param.length===undefined){
-             let fn=parameter[parameter.length-1];
-           if(isNaN(fn(index))){
-            badParameters.push(param)
-            errors=true;
-           }else{
-            innerSum+=parseInt(fn(index));
-            count++;
-           }
-            }else{
-                badParameters.push(param)
-                errors=true;
-            } 
-         }else{
-            innerSum+=parseInt(param);
-            count++;
-         }
-            })
-          sumAll+=innerSum;
-        }        
-        else if(isNaN(parameter)){
-badParameters.push(parameter);
-errors=true;
-        }
-        else{
-            sumAll+=parseInt(parameter);
-            count++;
-        }
-    })
-    return {sum:sumAll,badParameters, errors, count};
+    
 
+    numbers_Or_Arrays.forEach((parameter) => {
+        if (typeof parameter === "object" && parameter.length !== undefined) {
+            let innerSum = 0;
+            parameter.forEach((param, index) => {
+                if (isNaN(param)) {
+                    if (typeof param === "object" && param.length === undefined) {
+                        let fn = parameter[parameter.length - 1];
+                        if (typeof fn === "function") {
+                            if (isNaN(fn(index))) {
+                                badParameters.push(param);
+                                errors = true;
+                            } else {
+                                innerSum += parseInt(fn(index));
+                                count++;
+                            }
+                        } else {
+                            badParameters.push(param);
+                            errors = true;
+                        }
+                    } else {
+                        badParameters.push(param);
+                        errors = true;
+                    }
+                } else {
+                    innerSum += parseInt(param);
+                    count++;
+                }
+            });
+            sumAll += innerSum;
+        } else if (isNaN(parameter)) {
+            badParameters.push(parameter);
+
+            errors = true;
+        } else {
+            sumAll += parseInt(parameter);
+            count++;
+        }
+    });
+    return { sum: sumAll, badParameters, errors, count };
 }
+
+

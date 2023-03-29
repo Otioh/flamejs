@@ -4,7 +4,6 @@ import { sumInterface } from "./all.interface";
 
 
 
-
 // *Sum:
 // The sum function returns the sum of all the parameters passed into it, including items inside array
 // of numbers and array of objects, errors status in boolean type, count of all items added successfully
@@ -20,6 +19,7 @@ export default function sum(...numbers_Or_Arrays:any[]): sumInterface {
     errors = false,
     badParameters: string[] = [],
     count = 0;
+
   numbers_Or_Arrays.forEach((parameter) => {
     if (typeof parameter === "object" && parameter.length !== undefined) {
       let innerSum = 0;
@@ -27,12 +27,17 @@ export default function sum(...numbers_Or_Arrays:any[]): sumInterface {
         if (isNaN(param)) {
           if (typeof param === "object" && param.length === undefined) {
             let fn = parameter[parameter.length - 1];
-            if (isNaN(fn(index))) {
+            if (typeof fn === "function") {
+              if (isNaN(fn(index))) {
+                badParameters.push(param);
+                errors = true;
+              } else {
+                innerSum += parseInt(fn(index));
+                count++;
+              }
+            } else {
               badParameters.push(param);
               errors = true;
-            } else {
-              innerSum += parseInt(fn(index));
-              count++;
             }
           } else {
             badParameters.push(param);
@@ -46,6 +51,7 @@ export default function sum(...numbers_Or_Arrays:any[]): sumInterface {
       sumAll += innerSum;
     } else if (isNaN(parameter)) {
       badParameters.push(parameter);
+
       errors = true;
     } else {
       sumAll += parseInt(parameter);
