@@ -1,9 +1,6 @@
 import { sumInterface } from "./all.interface";
 
 
-
-
-
 // *Sum:
 // The sum function returns the sum of all the parameters passed into it, including items inside array
 // of numbers and array of objects, errors status in boolean type, count of all items added successfully
