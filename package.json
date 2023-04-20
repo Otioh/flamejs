@@ -6,8 +6,10 @@
   "name": "flame-tools",
   "description": "Frequently used Javascript Tools",
   "type": "module",
-  "version": "1.2.1x",
-  "main": "index.js",
+  "version": "1.2.1xx",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["/dist"],
   "dependencies": {
     "ansi-styles": "^3.2.1",
     "browserslist": "^4.21.4",

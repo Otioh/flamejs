@@ -4,3 +4,10 @@ export interface sumInterface {
   badParameters: string[];
   count:number
 }
+
+export interface Percentage {
+  percent: number;
+  totalValue: number;
+  value: number;
+  error?:string;
+}

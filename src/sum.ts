@@ -20,7 +20,7 @@ export default function sum(...numbers_Or_Arrays:any[]): sumInterface {
   numbers_Or_Arrays.forEach((parameter) => {
     if (typeof parameter === "object" && parameter.length !== undefined) {
       let innerSum = 0;
-      parameter.forEach((param, index) => {
+      parameter.forEach((param:any, index:any) => {
         if (isNaN(param)) {
           if (typeof param === "object" && param.length === undefined) {
             let fn = parameter[parameter.length - 1];
