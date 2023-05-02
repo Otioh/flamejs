@@ -1,4 +1,8 @@
 export default function acronym(
+//Perfected!
+
+
+
   text:string,
   config = { mutipleWords: false, lengthOfResult: 2 }
 ):string {

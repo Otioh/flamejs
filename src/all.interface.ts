@@ -7,7 +7,7 @@ export interface sumInterface {
 
 export interface Percentage {
   percent: number;
-  totalValue: number;
-  value: number;
-  error?:string;
+  totalValue: number | undefined;
+  value: number | undefined;
+  error?: string;
 }

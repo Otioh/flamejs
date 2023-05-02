@@ -1,5 +1,6 @@
 import { sumInterface } from "./all.interface";
 
+//Perfected!
 
 // *Sum:
 // The sum function returns the sum of all the parameters passed into it, including items inside array
