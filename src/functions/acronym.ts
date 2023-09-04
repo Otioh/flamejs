@@ -1,10 +1,8 @@
-export default function acronym(
+export function acronym(
 //Perfected!
-
-
-
   text:string,
   config = { mutipleWords: false, lengthOfResult: 2 }
+  
 ):string {
   let { mutipleWords, lengthOfResult } = config;
   if (typeof text !== "string") {

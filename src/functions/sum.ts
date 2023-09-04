@@ -1,4 +1,11 @@
-import { sumInterface } from "./all.interface";
+ interface sumInterface {
+  sum: number;
+  errors: boolean;
+  badParameters: string[];
+  count:number
+}
+
+
 
 //Perfected!
 
@@ -12,7 +19,7 @@ import { sumInterface } from "./all.interface";
 // (e.g. [...testArr, (i)=>testArr[i].amount]).
 
 
-export default function sum(...numbers_Or_Arrays:any[]): sumInterface {
+export function sum(...numbers_Or_Arrays:any[]): sumInterface {
   let sumAll = 0,
     errors = false,
     badParameters: string[] = [],

@@ -1,5 +1,12 @@
-import { Percentage } from "./all.interface";
-export default function percentage(
+interface Percentage {
+  percent: number;
+  totalValue: number | undefined;
+  value: number | undefined;
+  error?: string;
+}
+
+
+export function percentage(
   values: { value?: number; totalValue?: number },
   percent = 100
 ): Percentage {
